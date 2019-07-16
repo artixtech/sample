@@ -1,21 +1,22 @@
-<div class="uper-footer">
+<div class="uper-footer row">
+    <div class="follow-link col md-6">
+            <?php
+                echo $this->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('social-1')
+                ->toHtml();
+            ?>
+        </div>
     <?php
         echo $this->getLayout()
         ->createBlock('Magento\Cms\Block\Block')
         ->setBlockId('newsletter')
         ->toHtml();
     ?>
-    <div class="follow-link">
-        <?php
-            echo $this->getLayout()
-            ->createBlock('Magento\Cms\Block\Block')
-            ->setBlockId('social-1')
-            ->toHtml();
-        ?>
-    </div>
+    
 </div>
-<div class="middle-footer">
-    <div class="footer-first-row">
+<div class="middle-footer row">
+    <div class="footer-first-row col-md-3">
         <?php
             echo $this->getLayout()
             ->createBlock('Magento\Cms\Block\Block')
@@ -23,7 +24,7 @@
             ->toHtml();
         ?>
     </div>
-    <div class="footer-second-row">
+    <div class="footer-second-row col-md-2">
         <?php
             echo $this->getLayout()
             ->createBlock('Magento\Cms\Block\Block')
@@ -31,7 +32,7 @@
             ->toHtml();
         ?>
     </div>
-    <div class="footer-third-row">
+    <div class="footer-third-row col-md-3">
         <?php
             echo $this->getLayout()
             ->createBlock('Magento\Cms\Block\Block')
@@ -39,7 +40,7 @@
             ->toHtml();
         ?>
     </div>
-    <div class="footer-fourth-row">
+    <div class="footer-fourth-row col-md-4">
         <?php
             echo $this->getLayout()
             ->createBlock('Magento\Cms\Block\Block')
@@ -48,7 +49,7 @@
         ?>
     </div>
 </div>
-<div class="lower-footer">
+<div class="lower-footer col-md-12">
     <?php
          echo $this->getLayout()
         ->createBlock('Magento\Cms\Block\Block')
